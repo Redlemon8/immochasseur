@@ -1,0 +1,244 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    color: darkslateblue;
+}
+
+/* HEADER */
+
+header img {
+    background-image: url(https://immochasseur.fr/wp-content/uploads/2020/01/chasseur-immo-maison.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 760px;
+}
+
+
+/* BANNER */
+
+.banner {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 7.5rem;
+    width: 100%;
+    background-color: darkslateblue;
+    position: fixed;
+    top: 0;
+}
+
+.logo {
+    width: 50%;
+    padding-left: 2rem;
+}
+
+.logo img {
+    height: 120px;
+}
+
+.nav {
+    width: 50%;
+}
+
+.nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style-type: none;
+    padding-right: 2rem;
+}
+
+nav a {
+    text-decoration: none ;
+    font-size: 1.2rem;
+    color: sandybrown;
+}
+
+.nav a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+/* MAIN */
+
+
+.bloc {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 7.5rem;
+    margin-top: -7.5rem;
+}
+
+.title {
+    text-align: center;
+    margin-top: 3rem;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+h3 {
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 4rem;
+}
+
+p {
+    font-size: 1.5rem;
+    margin-left: 2rem;
+}
+
+.underline {
+    text-decoration: underline sandybrown;
+    display: inline;
+}
+
+.list p {
+    text-decoration: underline sandybrown;
+}
+
+.list ul {
+    margin-left: 4rem;
+    margin-top: 1rem;
+}
+
+.list li {
+    font-size: 1.5rem;
+}
+
+.entreprise {
+    margin-top: 4rem;
+}
+
+.garantie {
+      margin-top: 4rem;
+}
+  
+.texte {
+      margin-top: 4rem;
+}
+  
+.list {
+      margin-top: 4rem;
+}
+  
+strong {
+    font-size: 1.5rem;
+}
+
+.vente {
+    margin-left: 2rem;
+    text-align: left;
+}
+
+.mediation p {
+    margin-top: 2rem;
+}
+
+#maison h3 {
+    margin-bottom: 3rem;
+}
+
+#maison {
+    padding-top: 7.5rem;
+    margin-top: -7.5rem;
+}
+
+.border {
+    border: 2px solid sandybrown;
+}
+
+#terrain {
+    padding-top: 7.5rem;
+    margin-top: -7.5rem;
+}
+
+.name, .email, .message{
+    display: flex;
+    flex-direction: column;
+    margin: 1.5rem 4rem;
+    width: 20rem;
+}
+
+.message textarea {
+    height: 10rem;
+}
+
+label, input, textarea {
+    font-size: 1.5rem;
+}
+
+button {
+    margin: 0 4rem 4rem 4rem;
+    border: 1px solid sandybrown;
+    background-color: darkslateblue;
+    color: white;
+    padding: 0 1.5rem;
+    text-align: center;
+    border-radius: 1rem;
+    height: 3rem;
+}
+
+button:hover {
+    cursor: pointer;
+    box-shadow:
+    inset 2px 2px 3px rgba(255, 255, 255, 0.6),
+    inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+}
+
+button:active {
+    box-shadow:
+    inset -2px -2px 3px rgba(255, 255, 255, 0.6),
+    inset 2px 2px 3px rgba(0, 0, 0, 0.6);
+}
+
+.formulaire {
+    display: flex;
+    flex-direction: row;
+}
+
+.coordonnées p {
+    margin: 0;
+    margin-left: 4rem;
+}
+
+.coordonnées h3 {
+    text-align: left;
+    margin-top: 2rem;
+    margin-left: 4rem;
+}
+
+.coordonnées img {
+    margin: 2rem 4rem;
+}
+
+.coordonnées img:hover {
+    cursor: pointer;
+}
+
+footer {
+    border: 1px solid sandybrown;
+    background-color: darkslateblue;
+    height: 4rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+footer p {
+    font-size: 1rem;
+    margin-right: 2rem;
+    color: white;
+}
+
+
