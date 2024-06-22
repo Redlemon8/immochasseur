@@ -322,6 +322,10 @@ button:active {
     flex-direction: row;
 }
 
+#message {
+    color: darkslateblue;
+}
+
 .coordonnées p {
     margin: 0;
     margin-left: 4rem;
