@@ -27,6 +27,13 @@ header img {
     background-color: darkslateblue;
     position: fixed;
     top: 0;
+    left: 0;
+    transition: top 0.8s, opacity 0.8s; /* Smooth opacity transition */
+    opacity: 1;
+}
+
+.banner.hidden {
+    opacity: 0;
 }
 
 .logo {
@@ -64,6 +71,99 @@ nav a {
 
 /* MAIN */
 
+a {
+    text-decoration: none;
+}
+
+p {
+    font-size: 1.5rem;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#intro {
+    height: 30rem;
+    background-image: url('../image/tierra-mallorca-rgJ1J8SDEAY-unsplash.jpg');
+    background-position: 50%;
+    background-size: cover;
+    border: 1px solid black;
+    box-shadow: 5px 5px 15px black;
+    width: 80%;
+    border-radius: 10px 10px 15px;
+    padding: 3rem;
+    margin-top: 8rem;
+}
+
+.inside-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+}
+
+#intro p, #intro h2, #intro strong{
+    color: white;
+}
+
+.subtitle {
+    margin: 3rem 0;
+}
+
+#contact-button {
+    box-shadow: 5px 5px 10px black;
+    background-color: rgb(2, 179, 105);
+    color: white;
+    margin: 4rem 0 0 0;
+    font-weight: bold;
+}
+
+#contact-button a {
+    color: white;
+}
+
+
+table {
+    border: 1px solid darkslateblue;
+}
+
+td {
+    padding: 1.2rem;
+    border: 1px solid darkslateblue;
+}
+
+.legende-text-left {
+    font-size: 0.8rem;
+}
+
+.compare-title {
+    margin: 12rem 0 6rem 0;
+}
+
+.compare-table {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.table {
+    margin: 0 4rem 0 8rem;
+}
+
+.image {
+    width: 100%;
+}
+
+.image img{
+    width: 80%;
+}
+
+
 
 .bloc {
     display: flex;
@@ -92,10 +192,6 @@ h3 {
     margin-top: 4rem;
 }
 
-p {
-    font-size: 1.5rem;
-    margin-left: 2rem;
-}
 
 .underline {
     text-decoration: underline sandybrown;
@@ -137,6 +233,7 @@ strong {
 
 .vente {
     margin-left: 2rem;
+    margin-bottom: 2rem;
     text-align: left;
 }
 
@@ -153,13 +250,32 @@ strong {
     margin-top: -7.5rem;
 }
 
+.bloc {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
 .border {
-    border: 2px solid sandybrown;
+    border: 10px solid white;
+    width: 30%;
+}
+
+.border img {
+    width: 100%;
+    height: 80%;
 }
 
 #terrain {
     padding-top: 7.5rem;
     margin-top: -7.5rem;
+}
+
+#contact {
+    margin-top: 18rem;
+    border-top: 2px solid darkslateblue;
 }
 
 .name, .email, .message{
@@ -179,7 +295,7 @@ label, input, textarea {
 
 button {
     margin: 0 4rem 4rem 4rem;
-    border: 1px solid sandybrown;
+    border: 1px solid green;
     background-color: darkslateblue;
     color: white;
     padding: 0 1.5rem;
@@ -235,7 +351,7 @@ footer {
     align-items: center;
 }
 
-footer p {
+footer p, footer a {
     font-size: 1rem;
     margin-right: 2rem;
     color: white;
