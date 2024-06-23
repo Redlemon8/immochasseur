@@ -5,13 +5,26 @@
     color: darkslateblue;
 }
 
-/* HEADER */
+h1 {
+    font-size: 3rem;
+}
 
-header img {
-    background-image: url(https://immochasseur.fr/wp-content/uploads/2020/01/chasseur-immo-maison.jpg);
-    background-size: cover;
-    width: 100%;
-    height: 760px;
+h2 {
+    font-size: 2.5rem;
+}
+
+h3 {
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 4rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    font-size: 1.5rem;
 }
 
 
@@ -30,10 +43,6 @@ header img {
     left: 0;
     transition: top 0.8s, opacity 0.8s; /* Smooth opacity transition */
     opacity: 1;
-}
-
-.banner.hidden {
-    opacity: 0;
 }
 
 .logo {
@@ -69,15 +78,17 @@ nav a {
 }
 
 
-/* MAIN */
+/* HEADER */
 
-a {
-    text-decoration: none;
+header img {
+    background-image: url(https://immochasseur.fr/wp-content/uploads/2020/01/chasseur-immo-maison.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 760px;
 }
 
-p {
-    font-size: 1.5rem;
-}
+
+/* SECTION SOCIETE */
 
 section {
     display: flex;
@@ -86,7 +97,7 @@ section {
 }
 
 #intro {
-    height: 30rem;
+    height: auto;
     background-image: url('../image/tierra-mallorca-rgJ1J8SDEAY-unsplash.jpg');
     background-position: 50%;
     background-size: cover;
@@ -144,7 +155,6 @@ td {
 }
 
 .compare-table {
-    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -164,6 +174,8 @@ td {
 }
 
 
+/* SECTION MAISON / TERRAIN */
+
 
 .bloc {
     display: flex;
@@ -178,67 +190,9 @@ td {
     margin-top: 3rem;
 }
 
-h1 {
-    font-size: 3rem;
-}
-
-h2 {
-    font-size: 2.5rem;
-}
-
-h3 {
-    font-size: 2rem;
-    text-align: center;
-    margin-top: 4rem;
-}
-
-
 .underline {
     text-decoration: underline sandybrown;
     display: inline;
-}
-
-.list p {
-    text-decoration: underline sandybrown;
-}
-
-.list ul {
-    margin-left: 4rem;
-    margin-top: 1rem;
-}
-
-.list li {
-    font-size: 1.5rem;
-}
-
-.entreprise {
-    margin-top: 4rem;
-}
-
-.garantie {
-      margin-top: 4rem;
-}
-  
-.texte {
-      margin-top: 4rem;
-}
-  
-.list {
-      margin-top: 4rem;
-}
-  
-strong {
-    font-size: 1.5rem;
-}
-
-.vente {
-    margin-left: 2rem;
-    margin-bottom: 2rem;
-    text-align: left;
-}
-
-.mediation p {
-    margin-top: 2rem;
 }
 
 #maison h3 {
@@ -272,6 +226,9 @@ strong {
     padding-top: 7.5rem;
     margin-top: -7.5rem;
 }
+
+
+/* CONTACT SECTION */
 
 #contact {
     margin-top: 18rem;
@@ -345,6 +302,9 @@ button:active {
     cursor: pointer;
 }
 
+
+/* FOOTER */
+
 footer {
     border: 1px solid sandybrown;
     background-color: darkslateblue;
@@ -359,6 +319,115 @@ footer p, footer a {
     font-size: 1rem;
     margin-right: 2rem;
     color: white;
+}
+
+@media screen and (max-width: 925px) {
+    .logo {
+        width: 30%;
+    }
+
+    .nav {
+        width: 70%;
+    }
+
+    .image {
+        display: none;
+    }
+
+    .compare-title {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 775px) {
+    .formulaire {
+        flex-direction: column;    
+    }
+
+    .coordonnées p, .coordonnées h3, .coordonnées img {
+        margin-left: 0;
+    }
+
+    .inside-box {
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .banner, header {
+        display: none;
+    }
+
+    #contact-button {
+        margin-top: 1rem;
+    }
+
+    #intro {
+        width: 90%;
+    }
+
+    .subtitle {
+        margin: 1.5rem 0;
+    }
+
+    .table {
+        margin: 0;
+    }
+
+    .border {
+        width: auto;
+    }
+
+    #contact {
+        margin-top: 5rem;
+    }
+}
+
+
+
+/* MENTION LEGAL */
+
+.list p {
+    text-decoration: underline sandybrown;
+}
+
+.list ul {
+    margin-left: 4rem;
+    margin-top: 1rem;
+}
+
+.list li {
+    font-size: 1.5rem;
+}
+
+.entreprise {
+    margin-top: 4rem;
+}
+
+.garantie {
+      margin-top: 4rem;
+}
+  
+.texte {
+      margin-top: 4rem;
+}
+  
+.list {
+      margin-top: 4rem;
+}
+  
+strong {
+    font-size: 1.5rem;
+}
+
+.vente {
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+    text-align: left;
+}
+
+.mediation p {
+    margin-top: 2rem;
 }
 
 
